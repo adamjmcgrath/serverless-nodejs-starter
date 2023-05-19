@@ -1,4 +1,7 @@
+import { ManagementClient } from "auth0";
+
 export const hello = async (event, context) => {
+  console.log(ManagementClient);
   return {
     statusCode: 200,
     body: JSON.stringify({
